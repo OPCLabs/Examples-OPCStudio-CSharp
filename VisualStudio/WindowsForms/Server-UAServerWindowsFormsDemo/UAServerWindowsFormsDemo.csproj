@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup Label="Globals">
+		<SccProjectName>SAK</SccProjectName>
+		<SccProvider>SAK</SccProvider>
+		<SccAuxPath>SAK</SccAuxPath>
+		<SccLocalPath>SAK</SccLocalPath>
+	</PropertyGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFrameworks>net472;net6.0-windows</TargetFrameworks>
+		<Nullable>disable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="OpcLabs.OpcWizard" Version="5.81.455"/>
+		<PackageReference Include="OpcLabs.QuickOpc.Forms" Version="5.81.455"/>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Library\Server-UAServerDemoLibrary\UAServerDemoLibrary.csproj"/>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup Label="Globals">
+		<SccProjectName>SAK</SccProjectName>
+		<SccProvider>SAK</SccProvider>
+		<SccAuxPath>SAK</SccAuxPath>
+		<SccLocalPath>SAK</SccLocalPath>
+	</PropertyGroup>
+	<PropertyGroup Label="Manual">
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	</PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFrameworks>net472;net6.0</TargetFrameworks>
+		<Company>CODE Consulting and Development, s.r.o.</Company>
+		<AssemblyVersion>5.81.455.1</AssemblyVersion>
+		<FileVersion>5.81.455.1</FileVersion>
+		<Product>QuickOPC-UA</Product>
+		<RootNamespace>UAServerDocExamples</RootNamespace>
+		<AssemblyName>UAServerDocExamples</AssemblyName>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Remove="Licensing\Key-DemoOrTrial-WebForm-1995003302-20240717.txt"/>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="Licensing\Key-DemoOrTrial-WebForm-1995003302-20240717.txt"/>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="OpcLabs.OpcWizard" Version="5.81.455"/>
+		<PackageReference Include="OpcLabs.QuickOpc" Version="5.81.455"/>
+	</ItemGroup>
+</Project>

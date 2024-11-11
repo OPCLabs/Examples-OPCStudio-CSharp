@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UASubscriberDocExamples", "Console\Subscriber-UASubscriberDocExamples\UASubscriberDocExamples.csproj", "{D2BCAEC5-7423-4196-87D9-3D51EA0DE99B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{0FEAC09C-4DB7-4A17-85E5-7B9E84673462}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowsForms", "WindowsForms", "{63B336A0-A7CF-4F0A-A040-2D92F89F4EF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyOpcUAPubSubDemo", "WindowsForms\Subscriber-EasyOpcUAPubSubDemo\EasyOpcUAPubSubDemo.csproj", "{74DFD15F-2F14-40C5-B7D2-0CE7CCA53C36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UACommonDocExamples", "Console\Common-UACommonDocExamples\UACommonDocExamples.csproj", "{5DAAF840-6D29-4DAF-9EFF-A6DE0A81313B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2BCAEC5-7423-4196-87D9-3D51EA0DE99B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BCAEC5-7423-4196-87D9-3D51EA0DE99B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BCAEC5-7423-4196-87D9-3D51EA0DE99B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BCAEC5-7423-4196-87D9-3D51EA0DE99B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74DFD15F-2F14-40C5-B7D2-0CE7CCA53C36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74DFD15F-2F14-40C5-B7D2-0CE7CCA53C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74DFD15F-2F14-40C5-B7D2-0CE7CCA53C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74DFD15F-2F14-40C5-B7D2-0CE7CCA53C36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DAAF840-6D29-4DAF-9EFF-A6DE0A81313B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DAAF840-6D29-4DAF-9EFF-A6DE0A81313B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DAAF840-6D29-4DAF-9EFF-A6DE0A81313B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DAAF840-6D29-4DAF-9EFF-A6DE0A81313B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2BCAEC5-7423-4196-87D9-3D51EA0DE99B} = {0FEAC09C-4DB7-4A17-85E5-7B9E84673462}
+		{74DFD15F-2F14-40C5-B7D2-0CE7CCA53C36} = {63B336A0-A7CF-4F0A-A040-2D92F89F4EF7}
+		{5DAAF840-6D29-4DAF-9EFF-A6DE0A81313B} = {0FEAC09C-4DB7-4A17-85E5-7B9E84673462}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DE509E1-3E15-4AD7-A407-381F80BBEED7}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/opclabs3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Console\\Subscriber-UASubscriberDocExamples\\UASubscriberDocExamples.csproj
+		SccProjectTopLevelParentUniqueName1 = Subscriber-CSharpExamples.sln
+		SccProjectName1 = Console/Subscriber-UASubscriberDocExamples
+		SccLocalPath1 = Console\\Subscriber-UASubscriberDocExamples
+		SccProjectUniqueName2 = WindowsForms\\Subscriber-EasyOpcUAPubSubDemo\\EasyOpcUAPubSubDemo.csproj
+		SccProjectTopLevelParentUniqueName2 = Subscriber-CSharpExamples.sln
+		SccProjectName2 = WindowsForms/Subscriber-EasyOpcUAPubSubDemo
+		SccLocalPath2 = WindowsForms\\Subscriber-EasyOpcUAPubSubDemo
+		SccProjectUniqueName3 = Console\\Common-UACommonDocExamples\\UACommonDocExamples.csproj
+		SccProjectTopLevelParentUniqueName3 = Subscriber-CSharpExamples.sln
+		SccProjectName3 = Console/Common-UACommonDocExamples
+		SccLocalPath3 = Console\\Common-UACommonDocExamples
+	EndGlobalSection
+EndGlobal

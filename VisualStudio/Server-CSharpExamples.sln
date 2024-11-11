@@ -1,0 +1,114 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UAServerDocExamples", "Console\Server-UAServerDocExamples\UAServerDocExamples.csproj", "{80463A61-7D86-4267-B491-CD5DFBA7378C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{FF680EB5-10F0-431F-82DB-9A3816F96E60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UAServerConsoleDemo", "Console\Server-UAServerConsoleDemo\UAServerConsoleDemo.csproj", "{DF042D15-6696-4F5D-BE60-61AEB3768628}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowsForms", "WindowsForms", "{4AECBA44-097B-4995-88A9-A42A16A19737}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UAServerWindowsFormsDemo", "WindowsForms\Server-UAServerWindowsFormsDemo\UAServerWindowsFormsDemo.csproj", "{ECD0F960-5D37-441E-9057-0BA44033B8F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{FCEFF77A-3791-49AF-B5A0-B60B157A5466}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UAServerDemoLibrary", "Library\Server-UAServerDemoLibrary\UAServerDemoLibrary.csproj", "{10891A32-1F66-477E-99BB-86142A675738}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowsService", "WindowsService", "{8BE831CC-9417-4ACF-B403-9F994AB53F3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UAServerWindowsServiceDemo", "WindowsService\Server-UAServerWindowsServiceDemo\UAServerWindowsServiceDemo.csproj", "{21129BDF-6EE3-4B40-96A7-4EF9949D6358}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerService", "WorkerService", "{819A7259-9474-4706-9518-64A0F1F66B77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UAServerWorkerServiceDemo", "WorkerService\Server-UAServerWorkerServiceDemo\UAServerWorkerServiceDemo.csproj", "{0E0BCE02-27EE-4F16-AF94-246117EBA151}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UACommonDocExamples", "Console\Common-UACommonDocExamples\UACommonDocExamples.csproj", "{2CE15AD3-D75F-4047-B0F4-067310D3B59D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80463A61-7D86-4267-B491-CD5DFBA7378C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80463A61-7D86-4267-B491-CD5DFBA7378C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80463A61-7D86-4267-B491-CD5DFBA7378C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80463A61-7D86-4267-B491-CD5DFBA7378C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF042D15-6696-4F5D-BE60-61AEB3768628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF042D15-6696-4F5D-BE60-61AEB3768628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF042D15-6696-4F5D-BE60-61AEB3768628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF042D15-6696-4F5D-BE60-61AEB3768628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECD0F960-5D37-441E-9057-0BA44033B8F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECD0F960-5D37-441E-9057-0BA44033B8F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECD0F960-5D37-441E-9057-0BA44033B8F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECD0F960-5D37-441E-9057-0BA44033B8F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10891A32-1F66-477E-99BB-86142A675738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10891A32-1F66-477E-99BB-86142A675738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10891A32-1F66-477E-99BB-86142A675738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10891A32-1F66-477E-99BB-86142A675738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21129BDF-6EE3-4B40-96A7-4EF9949D6358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21129BDF-6EE3-4B40-96A7-4EF9949D6358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21129BDF-6EE3-4B40-96A7-4EF9949D6358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21129BDF-6EE3-4B40-96A7-4EF9949D6358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E0BCE02-27EE-4F16-AF94-246117EBA151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E0BCE02-27EE-4F16-AF94-246117EBA151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E0BCE02-27EE-4F16-AF94-246117EBA151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E0BCE02-27EE-4F16-AF94-246117EBA151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CE15AD3-D75F-4047-B0F4-067310D3B59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE15AD3-D75F-4047-B0F4-067310D3B59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE15AD3-D75F-4047-B0F4-067310D3B59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE15AD3-D75F-4047-B0F4-067310D3B59D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80463A61-7D86-4267-B491-CD5DFBA7378C} = {FF680EB5-10F0-431F-82DB-9A3816F96E60}
+		{DF042D15-6696-4F5D-BE60-61AEB3768628} = {FF680EB5-10F0-431F-82DB-9A3816F96E60}
+		{ECD0F960-5D37-441E-9057-0BA44033B8F9} = {4AECBA44-097B-4995-88A9-A42A16A19737}
+		{10891A32-1F66-477E-99BB-86142A675738} = {FCEFF77A-3791-49AF-B5A0-B60B157A5466}
+		{21129BDF-6EE3-4B40-96A7-4EF9949D6358} = {8BE831CC-9417-4ACF-B403-9F994AB53F3E}
+		{0E0BCE02-27EE-4F16-AF94-246117EBA151} = {819A7259-9474-4706-9518-64A0F1F66B77}
+		{2CE15AD3-D75F-4047-B0F4-067310D3B59D} = {FF680EB5-10F0-431F-82DB-9A3816F96E60}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A1D1EDA-F835-4DE9-82B0-A98A8B856CA6}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/opclabs3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Console\\Server-UAServerDocExamples\\UAServerDocExamples.csproj
+		SccProjectTopLevelParentUniqueName1 = Server-CSharpExamples.sln
+		SccProjectName1 = Console/Server-UAServerDocExamples
+		SccLocalPath1 = Console\\Server-UAServerDocExamples
+		SccProjectUniqueName2 = Console\\Server-UAServerConsoleDemo\\UAServerConsoleDemo.csproj
+		SccProjectTopLevelParentUniqueName2 = Server-CSharpExamples.sln
+		SccProjectName2 = Console/Server-UAServerConsoleDemo
+		SccLocalPath2 = Console\\Server-UAServerConsoleDemo
+		SccProjectUniqueName3 = WindowsForms\\Server-UAServerWindowsFormsDemo\\UAServerWindowsFormsDemo.csproj
+		SccProjectTopLevelParentUniqueName3 = Server-CSharpExamples.sln
+		SccProjectName3 = WindowsForms/Server-UAServerWindowsFormsDemo
+		SccLocalPath3 = WindowsForms\\Server-UAServerWindowsFormsDemo
+		SccProjectUniqueName4 = Library\\Server-UAServerDemoLibrary\\UAServerDemoLibrary.csproj
+		SccProjectTopLevelParentUniqueName4 = Server-CSharpExamples.sln
+		SccProjectName4 = Library/Server-UAServerDemoLibrary
+		SccLocalPath4 = Library\\Server-UAServerDemoLibrary
+		SccProjectUniqueName5 = WindowsService\\Server-UAServerWindowsServiceDemo\\UAServerWindowsServiceDemo.csproj
+		SccProjectTopLevelParentUniqueName5 = Server-CSharpExamples.sln
+		SccProjectName5 = WindowsService/Server-UAServerWindowsServiceDemo
+		SccLocalPath5 = WindowsService\\Server-UAServerWindowsServiceDemo
+		SccProjectUniqueName6 = WorkerService\\Server-UAServerWorkerServiceDemo\\UAServerWorkerServiceDemo.csproj
+		SccProjectTopLevelParentUniqueName6 = Server-CSharpExamples.sln
+		SccProjectName6 = WorkerService/Server-UAServerWorkerServiceDemo
+		SccLocalPath6 = WorkerService\\Server-UAServerWorkerServiceDemo
+		SccProjectUniqueName7 = Console\\Common-UACommonDocExamples\\UACommonDocExamples.csproj
+		SccProjectTopLevelParentUniqueName7 = Server-CSharpExamples.sln
+		SccProjectName7 = Console/Common-UACommonDocExamples
+		SccLocalPath7 = Console\\Common-UACommonDocExamples
+	EndGlobalSection
+EndGlobal
