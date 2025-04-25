@@ -6,7 +6,8 @@
 // ReSharper disable LocalizableElement
 // ReSharper disable PossibleNullReferenceException
 #region Example
-// Shows how to assure presence of the own application certificate, and display its thumbprint.
+// Shows how to assure presence of the own application certificate pack, and display default application certificate
+// thumbprint.
 //
 // Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
 // OPC client and subscriber examples in C# on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-CSharp .
@@ -21,7 +22,7 @@ using OpcLabs.EasyOpc.UA.OperationModel;
 
 namespace UADocExamples.Application._IEasyUAClientServerApplication
 {
-    class AssureOwnCertificate
+    class AssureOwnCertificatePack
     {
         public static void Main1()
         {
@@ -30,19 +31,19 @@ namespace UADocExamples.Application._IEasyUAClientServerApplication
             
             try
             {
-                Console.WriteLine("Assuring presence of the own application certificate...");
-                bool created = application.AssureOwnCertificate();
+                Console.WriteLine("Assuring presence of the own application certificate pack...");
+                bool created = application.AssureOwnCertificatePack();
 
                 Console.WriteLine(created
-                    ? "A new certificate has been created."
-                    : "An existing certificate has been found.");
+                    ? "A new certificate pack has been created."
+                    : "An existing certificate pack has been found.");
 
                 Console.WriteLine();
-                Console.WriteLine("Finding the current application certificate...");
+                Console.WriteLine("Finding the current default application certificate...");
                 IPkiCertificate pkiCertificate = application.FindOwnCertificate();
 
                 Console.WriteLine();
-                Console.WriteLine($"The thumbprint of the current application certificate is: {pkiCertificate?.Thumbprint}");
+                Console.WriteLine($"The thumbprint of the current default application certificate is: {pkiCertificate?.Thumbprint}");
             }
             catch (UAException uaException)
             {

@@ -6,8 +6,8 @@
 // ReSharper disable LocalizableElement
 // ReSharper disable PossibleNullReferenceException
 #region Example
-// Shows how to obtain a new application certificate from the certificate manager (GDS), and store it for subsequent usage,
-// with progress reporting.
+// Shows how to obtain a new application certificate pack from the certificate manager (GDS), and store it for subsequent
+// usage.
 //
 // Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
 // OPC client and subscriber examples in C# on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-CSharp .
@@ -15,8 +15,10 @@
 // a commercial license in order to use Online Forums, and we reply to every post.
 
 using System;
+using System.Collections.Generic;
 using OpcLabs.BaseLib.Security.Cryptography.PkiCertificates;
 using OpcLabs.EasyOpc.UA;
+using OpcLabs.EasyOpc.UA.AddressSpace;
 using OpcLabs.EasyOpc.UA.Application;
 using OpcLabs.EasyOpc.UA.Application.Extensions;
 using OpcLabs.EasyOpc.UA.Extensions;
@@ -24,12 +26,12 @@ using OpcLabs.EasyOpc.UA.OperationModel;
 
 namespace UADocExamples.Application._IEasyUAClientServerApplication
 {
-    partial class ObtainNewCertificate
+    partial class ObtainNewCertificatePack
     {
-        public static void Progress()
+        public static void Main1()
         {
             // Define which GDS we will work with.
-            UAEndpointDescriptor gdsEndpointDescriptor = 
+            UAEndpointDescriptor gdsEndpointDescriptor =
                 ((UAEndpointDescriptor)"opc.tcp://opcua.demo-this.com:58810/GlobalDiscoveryServer")
                 .WithUserNameIdentity("appadmin", "demo");
 
@@ -39,13 +41,13 @@ namespace UADocExamples.Application._IEasyUAClientServerApplication
             // Display which application we are about to work with.
             Console.WriteLine("Application URI string: {0}",
                 application.GetApplicationElement().ApplicationUriString);
-
-            // Obtain a new application certificate from the certificate manager (GDS), and store it for subsequent usage.
-            IPkiCertificate certificate;
+            
+            // Obtain a new application certificate pack from the certificate manager (GDS), and store it for subsequent
+            // usage.
+            UANodeIdPkiCertificateDictionary certificateDictionary;
             try
             {
-                certificate = application.ObtainNewCertificate(gdsEndpointDescriptor,
-                    new Progress<string>(s => Console.WriteLine("Progress: {0}", s)));
+                certificateDictionary = application.ObtainNewCertificatePack(gdsEndpointDescriptor);
             }
             catch (UAException uaException)
             {
@@ -54,7 +56,12 @@ namespace UADocExamples.Application._IEasyUAClientServerApplication
             }
 
             // Display results
-            Console.WriteLine("Certificate: {0}", certificate);
+            foreach (KeyValuePair<UANodeId, IPkiCertificate> pair in certificateDictionary)
+            {
+                Console.WriteLine();
+                Console.WriteLine($"Certificate type Id: {pair.Key}");
+                Console.WriteLine($"Certificate: {pair.Value}");
+            }
         }
     }
 }

@@ -7,14 +7,15 @@
 	</PropertyGroup>
 	<PropertyGroup Label="Manual">
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
 	</PropertyGroup>
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
-		<TargetFrameworks>net472;net6.0</TargetFrameworks>
+		<TargetFrameworks>net472;net8.0</TargetFrameworks>
 		<AssemblyName>UAXmlEventLogger</AssemblyName>
 		<RootNamespace>UAXmlEventLogger</RootNamespace>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.QuickOpc" Version="5.81.455"/>
+		<PackageReference Include="OpcLabs.QuickOpc" Version="5.82.175"/>
 	</ItemGroup>
 </Project>

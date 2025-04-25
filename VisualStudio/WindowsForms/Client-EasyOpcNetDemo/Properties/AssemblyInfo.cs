@@ -24,3 +24,7 @@ using System.Runtime.InteropServices;
 [assembly: Guid("bfcf780a-48ed-4ec5-bd44-0d153a17d7d6")]
 
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("en-US")]
+
+#if (!NETFRAMEWORK)
+[assembly: System.Runtime.Versioning.SupportedOSPlatform("windows")]
+#endif

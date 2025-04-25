@@ -17,6 +17,7 @@
 		<SccAuxPath>SAK</SccAuxPath>
 		<SccProvider>SAK</SccProvider>
 		<TargetFrameworkProfile/>
+		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 		<PlatformTarget>AnyCPU</PlatformTarget>
@@ -63,7 +64,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="OpcLabs.OpcWizard">
-			<Version>5.81.455</Version>
+			<Version>5.82.175</Version>
 		</PackageReference>
 	</ItemGroup>
 	<ItemGroup>

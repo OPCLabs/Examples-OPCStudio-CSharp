@@ -14,6 +14,7 @@
 
 using System;
 using System.Windows.Forms;
+using Opc.Ua;
 using OpcLabs.EasyOpc.UA;
 
 namespace UAServerWindowsFormsDemo

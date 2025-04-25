@@ -7,10 +7,11 @@
 	</PropertyGroup>
 	<PropertyGroup Label="Manual">
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
 	</PropertyGroup>
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<AssemblyName>UANetSdkConfiguration</AssemblyName>
 		<RootNamespace>UANetSdkConfiguration</RootNamespace>
 	</PropertyGroup>
@@ -19,7 +20,7 @@
 		<None Remove="MultiTargetUANetSdkConfiguration.csproj.vspscc"/>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.QuickOpc" Version="5.81.455"/>
+		<PackageReference Include="OpcLabs.QuickOpc" Version="5.82.175"/>
 	</ItemGroup>
 	<ItemGroup>
 		<None Update="App.config">

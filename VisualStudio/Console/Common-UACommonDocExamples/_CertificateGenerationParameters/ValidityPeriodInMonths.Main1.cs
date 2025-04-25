@@ -38,14 +38,14 @@ namespace UACommonDocExamples._CertificateGenerationParameters
 
             try
             {
-                Console.WriteLine("Removing the current application instance certificate...");
-                application.RemoveOwnCertificate(mustExist:false);
+                Console.WriteLine("Removing the current application instance certificate pack...");
+                application.RemoveOwnCertificatePack(mustExist:false);
 
                 Console.WriteLine("Do something - invoke an OPC read, to trigger auto-generation of a new instance certificate...");
                 // If you are doing server development: Instantiate and start the server here, instead of invoking the client.
                 client.ReadValue(endpointDescriptor, "nsu=http://test.org/UA/Data/ ;i=10853");
 
-                Console.WriteLine("Finding the current application instance certificate...");
+                Console.WriteLine("Finding the current default application instance certificate...");
                 IPkiCertificate instanceCertificate = application.FindOwnCertificate();
 
                 if (!(instanceCertificate is null))

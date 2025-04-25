@@ -21,7 +21,6 @@ namespace UAServerDocExamples
             var actionArray = new Action[] {
                 _EasyUAServer._Construction.Main1,
                 _EasyUAServer._Parameterization.OpcCompliance,
-                _EasyUAServer.AlternateHostNames.Main1,
                 _EasyUAServer.ConversionError.Main1,
                 _EasyUAServer.Dispose.Main1,
                 _EasyUAServer.EffectiveEndpointDescriptor.Main1,
@@ -29,6 +28,7 @@ namespace UAServerDocExamples
                 _EasyUAServer.EndpointUrl.Main1,
                 _EasyUAServer.EndpointUrlString.Main1,
                 _EasyUAServer.FindServerNode.Main1,
+                _EasyUAServer.HostNames.Main1,
                 _EasyUAServer.LogEntry.Main1,
                 _EasyUAServer.MessageSecurityModes.Secure,
                 _EasyUAServer.MessageSecurityModes.SecurityNone,

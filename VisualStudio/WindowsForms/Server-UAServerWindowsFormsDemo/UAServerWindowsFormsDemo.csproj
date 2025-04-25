@@ -7,17 +7,23 @@
 	</PropertyGroup>
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFrameworks>net472;net6.0-windows</TargetFrameworks>
+		<TargetFrameworks>net472;net8.0-windows</TargetFrameworks>
 		<Nullable>disable</Nullable>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.OpcWizard" Version="5.81.455"/>
-		<PackageReference Include="OpcLabs.QuickOpc.Forms" Version="5.81.455"/>
+		<PackageReference Include="OpcLabs.OpcWizard" Version="5.82.175"/>
+		<PackageReference Include="OpcLabs.QuickOpc.Forms" Version="5.82.175"/>
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\..\Library\Server-UAServerDemoLibrary\UAServerDemoLibrary.csproj"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="MainForm.cs">
+			<SubType>Form</SubType>
+		</Compile>
 	</ItemGroup>
 </Project>

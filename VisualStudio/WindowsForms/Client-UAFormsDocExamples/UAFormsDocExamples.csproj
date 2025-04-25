@@ -7,13 +7,22 @@
 	</PropertyGroup>
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
-		<TargetFrameworks>net472;net6.0-windows</TargetFrameworks>
+		<TargetFrameworks>net472;net8.0-windows</TargetFrameworks>
 		<UseWindowsForms>true</UseWindowsForms>
 		<PlatformTarget>AnyCPU</PlatformTarget>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="OpcLabs.QuickOpc" Version="5.81.455"/>
-		<PackageReference Include="OpcLabs.QuickOpc.Forms" Version="5.81.455"/>
+		<PackageReference Include="OpcLabs.QuickOpc" Version="5.82.175"/>
+		<PackageReference Include="OpcLabs.QuickOpc.Forms" Version="5.82.175"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="Form1.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Update="_UABrowseControl/UsageForm.cs">
+			<SubType>Form</SubType>
+		</Compile>
 	</ItemGroup>
 </Project>

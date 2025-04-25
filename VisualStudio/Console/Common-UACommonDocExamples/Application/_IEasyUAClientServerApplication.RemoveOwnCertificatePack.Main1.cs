@@ -6,7 +6,7 @@
 // ReSharper disable LocalizableElement
 // ReSharper disable PossibleNullReferenceException
 #region Example
-// Shows how to remove the own application certificate.
+// Shows how to remove the own application certificate pack.
 //
 // Find all latest examples here: https://opclabs.doc-that.com/files/onlinedocs/OPCLabs-OpcStudio/Latest/examples.html .
 // OPC client and subscriber examples in C# on GitHub: https://github.com/OPCLabs/Examples-QuickOPC-CSharp .
@@ -20,7 +20,7 @@ using OpcLabs.EasyOpc.UA.OperationModel;
 
 namespace UADocExamples.Application._IEasyUAClientServerApplication
 {
-    class RemoveOwnCertificate
+    class RemoveOwnCertificatePack
     {
         public static void Main1()
         {
@@ -29,9 +29,9 @@ namespace UADocExamples.Application._IEasyUAClientServerApplication
 
             try
             {
-                Console.WriteLine("Removing the own application certificate...");
-                application.RemoveOwnCertificate();
-                Console.WriteLine("The application certificate has been removed.");
+                Console.WriteLine("Removing the own application certificate pack...");
+                application.RemoveOwnCertificatePack();
+                Console.WriteLine("The application certificate pack has been removed.");
             }
             catch (UAException uaException)
             {

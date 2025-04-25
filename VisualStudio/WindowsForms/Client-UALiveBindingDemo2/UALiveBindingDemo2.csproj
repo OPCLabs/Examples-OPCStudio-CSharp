@@ -16,6 +16,7 @@
 		<SccAuxPath>SAK</SccAuxPath>
 		<SccProvider>SAK</SccProvider>
 		<TargetFrameworkProfile/>
+		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 		<PlatformTarget>AnyCPU</PlatformTarget>
@@ -77,10 +78,10 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="OpcLabs.QuickOpc" Version="5.71.0-rev0019">
-			<Version>5.81.455</Version>
+			<Version>5.82.175</Version>
 		</PackageReference>
 		<PackageReference Include="OpcLabs.QuickOpc.Forms" Version="5.71.0-rev0019">
-			<Version>5.81.455</Version>
+			<Version>5.82.175</Version>
 		</PackageReference>
 	</ItemGroup>
 	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>

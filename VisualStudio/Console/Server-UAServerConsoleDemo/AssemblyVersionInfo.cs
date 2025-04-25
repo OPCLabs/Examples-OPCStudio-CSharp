@@ -18,7 +18,7 @@ static partial class AssemblyProperties
 // ReSharper restore PartialTypeWithSinglePart 																		
 // ReSharper restore CheckNamespace 																					
 { 																														
-    public const string AssemblyBranch = "2024.2"; 																	
-    public const string AssemblyVersion = "5.81.455.1"; 														
-    public const string AssemblyFileVersion = "5.81.455.1"; 													
+    public const string AssemblyBranch = "2025.1"; 																	
+    public const string AssemblyVersion = "5.82.175.1"; 														
+    public const string AssemblyFileVersion = "5.82.175.1"; 													
 } 																														
